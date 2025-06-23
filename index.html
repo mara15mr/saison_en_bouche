@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saison en Bouche - Where Flavor Meets The Season</title>
+    <meta name="description" content="An upscale restaurant where every season has a flavor. Experience our seasonal menus with stunning views and elegant atmosphere.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="attached_assets/Screenshot 2025-06-22 144346_1750631165177.png" alt="Saison en Bouche Logo" class="logo-image">
+                <span class="logo-text">Saison en Bouche</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#news" class="nav-link">News</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="logo-hero">
+                <img src="attached_assets/Screenshot 2025-06-22 144346_1750631165177.png" alt="Saison en Bouche Logo" class="logo-hero-image">
+                <h1 class="hero-title">Saison en Bouche</h1>
+                <p class="hero-subtitle">Where Flavor Meets The Season</p>
+            </div>
+            <p class="hero-description">Every season has a flavor</p>
+            <button class="cta-button" onclick="document.getElementById('menu').scrollIntoView()">
+                Explore Our Seasonal Menu
+            </button>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800" alt="Elegant restaurant interior">
+        </div>
+    </section>
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Saison en Bouche</h2>
+                    <p>Welcome to Saison en Bouche, an upscale restaurant where flavor truly embodies the season. Our philosophy is simple yet profound: "Every season has a flavor."</p>
+                    
+                    <p>This expansive venue unveils a new menu with each passing season, carefully curated to reflect its essence. Our culinary team crafts each dish to celebrate the natural rhythm of the year, using only the finest locally sourced ingredients.</p>
+                    
+                    <p>With stunning views and a welcoming atmosphere, our restaurant combines sophisticated shades of gray, black, white, and blue, beautifully accented by hints of purple and gold. The ambiance creates the perfect backdrop for an unforgettable dining experience.</p>
+                    
+                    <p>Whether you're savoring our vibrant summer menu with refreshing drinks and luscious ice creams, or indulging in our warming winter offerings, each visit to Saison en Bouche is a journey through the seasons' most exquisite flavors.</p>
+                    
+                    <p>Come experience where culinary artistry meets seasonal perfection, and discover why every season truly has its own distinctive flavor at Saison en Bouche.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Elegant restaurant dining room with purple and gold accents">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Our Seasonal Menus</h2>
+            <p class="menu-intro">Experience the flavors of each season with our carefully curated menus</p>
+            
+            <div class="season-buttons">
+                <button class="season-btn active" data-season="summer">
+                    <i class="fas fa-sun"></i>
+                    Summer
+                </button>
+                <button class="season-btn" data-season="spring">
+                    <i class="fas fa-seedling"></i>
+                    Spring
+                </button>
+                <button class="season-btn" data-season="autumn">
+                    <i class="fas fa-leaf"></i>
+                    Autumn
+                </button>
+                <button class="season-btn" data-season="winter">
+                    <i class="fas fa-snowflake"></i>
+                    Winter
+                </button>
+            </div>
+            <div class="menu-content">
+                <!-- Summer Menu -->
+                <div class="season-menu active" id="summer-menu">
+                    <h3>☀️ Summer Menu – Fraîcheur d'Été</h3>
+                    
+                    <div class="menu-category">
+                        <h4>🥂 Starters</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Avocado dish">
+                                <div class="item-info">
+                                    <h5>Avocado Basil Snowballs</h5>
+                                    <p>Frozen avocado mousse spheres with basil</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Peach soup">
+                                <div class="item-info">
+                                    <h5>Cold Peach & Feta Soup</h5>
+                                    <p>Creamy chilled soup with mint oil</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Cucumber carpaccio">
+                                <div class="item-info">
+                                    <h5>Rainbow Cucumber Carpaccio</h5>
+                                    <p>Cucumber, daikon, beetroot, and ginger-lime dressing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h4>🍽️ Mains</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Tuna steak">
+                                <div class="item-info">
+                                    <h5>Frozen Herb-Crusted Tuna Steak</h5>
+                                    <p>Served with cucumber noodles and yuzu jelly</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Blueberry risotto">
+                                <div class="item-info">
+                                    <h5>Chilled Blueberry Goat Cheese Risotto</h5>
+                                    <p>Sweet and savory delight</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Mango curry">
+                                <div class="item-info">
+                                    <h5>Mango Coconut Curry Bowl</h5>
+                                    <p>Cold curry served in frozen pineapple with grilled shrimp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h4>🍹 Drinks</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Green smoothie">
+                                <div class="item-info">
+                                    <h5>Cucumber Zen</h5>
+                                    <p>Aloe, cucumber, green apple, matcha</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Pink drink">
+                                <div class="item-info">
+                                    <h5>Sunset Breeze</h5>
+                                    <p>Dragon fruit, hibiscus syrup, strawberry</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Lavender lemonade">
+                                <div class="item-info">
+                                    <h5>Frozen Lavender Lemonade</h5>
+                                    <p>Refreshing and aromatic</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h4>🍰 Desserts</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Ice cream sushi">
+                                <div class="item-info">
+                                    <h5>Ice Cream Sushi Rolls</h5>
+                                    <p>Coconut rice with mango sorbet</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Grapefruit dessert">
+                                <div class="item-info">
+                                    <h5>Frozen Grapefruit Parfait</h5>
+                                    <p>Jelly, yogurt mousse, rose petals</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Honeydew dessert">
+                                <div class="item-info">
+                                    <h5>Honeydew Cloud Nest</h5>
+                                    <p>Shaved honeydew with jasmine foam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Spring Menu -->
+                <div class="season-menu" id="spring-menu">
+                    <h3>🌸 Spring Menu – Éveil des Saveurs</h3>
+                    
+                    <div class="menu-category">
+                        <h4>🥂 Starters</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Asparagus soup">
+                                <div class="item-info">
+                                    <h5>Asparagus Velouté with Lemon Foam</h5>
+                                    <p>Silky asparagus soup topped with citrus air</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Garden tart">
+                                <div class="item-info">
+                                    <h5>Spring Garden Tart</h5>
+                                    <p>Puff pastry with goat cheese, peas, radish, and mint</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Carrot dish">
+                                <div class="item-info">
+                                    <h5>Carrot & Ginger Crudo</h5>
+                                    <p>Thinly sliced raw carrots in ginger vinaigrette</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h4>🍽️ Mains</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Lamb cutlets">
+                                <div class="item-info">
+                                    <h5>Herb-Crusted Lamb with Pea Purée</h5>
+                                    <p>Tender lamb cutlets with seasonal greens</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1544943910-4ab880996de0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Sea bream">
+                                <div class="item-info">
+                                    <h5>Grilled Sea Bream with Fennel and Orange Salad</h5>
+                                    <p>Light, zesty, and fresh</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Mushroom risotto">
+                                <div class="item-info">
+                                    <h5>Morel Mushroom Risotto</h5>
+                                    <p>Creamy risotto with wild spring mushrooms and chive oil</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h4>🍹 Drinks</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Pear drink">
+                                <div class="item-info">
+                                    <h5>Pear & Basil Cooler</h5>
+                                    <p>Sparkling water, pear juice, and fresh basil</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Lavender lemonade">
+                                <div class="item-info">
+                                    <h5>Lavender Lemonade</h5>
+                                    <p>House-made lemonade infused with lavender</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h4>🍰 Desserts</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Rhubarb tart">
+                                <div class="item-info">
+                                    <h5>Rhubarb Rose Tart</h5>
+                                    <p>Sweet rose custard with rhubarb ribbons</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Lemon sorbet">
+                                <div class="item-info">
+                                    <h5>Lemon Thyme Sorbet</h5>
+                                    <p>Sharp and refreshing with herbal balance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Autumn Menu -->
+                <div class="season-menu" id="autumn-menu">
+                    <h3>🍁 Autumn Menu – Chaleur Dorée</h3>
+                    
+                    <div class="menu-category">
+                        <h4>🥂 Starters</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Pumpkin soup">
+                                <div class="item-info">
+                                    <h5>Pumpkin Chestnut Velouté</h5>
+                                    <p>Silky soup with nutmeg cream</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Pear tartine">
+                                <div class="item-info">
+                                    <h5>Pear & Bleu Cheese Tartine</h5>
+                                    <p>Served on warm brioche with walnut crumble</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Beetroot carpaccio">
+                                <div class="item-info">
+                                    <h5>Roasted Beetroot Carpaccio</h5>
+                                    <p>Layered with arugula and balsamic pearls</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h4>🍽️ Mains</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1504973960431-1c467e159aa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Duck breast">
+                                <div class="item-info">
+                                    <h5>Duck Breast with Fig Jus</h5>
+                                    <p>Served with sweet potato mash</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Mushroom pasta">
+                                <div class="item-info">
+                                    <h5>Wild Mushroom Pappardelle</h5>
+                                    <p>Fresh pasta with autumn mushrooms and truffle oil</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Squash gratin">
+                                <div class="item-info">
+                                    <h5>Butternut Squash Gratin</h5>
+                                    <p>Baked with gruyère and rosemary cream</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h4>🍹 Drinks</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Apple cider">
+                                <div class="item-info">
+                                    <h5>Spiced Apple Cider</h5>
+                                    <p>Served warm or chilled with cinnamon</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Plum drink">
+                                <div class="item-info">
+                                    <h5>Smoked Plum Fizz</h5>
+                                    <p>Plum nectar with smoked rosemary syrup</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h4>🍰 Desserts</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Pecan tart">
+                                <div class="item-info">
+                                    <h5>Pecan Praline Tart</h5>
+                                    <p>Buttery crust, warm filling</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Poached pear">
+                                <div class="item-info">
+                                    <h5>Cinnamon Poached Pear</h5>
+                                    <p>In red wine glaze</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Apple dessert">
+                                <div class="item-info">
+                                    <h5>Caramel Apple Mille-Feuille</h5>
+                                    <p>Crisp pastry layers with spiced cream</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Winter Menu -->
+                <div class="season-menu" id="winter-menu">
+                    <h3>❄️ Winter Menu – Éclat de Givre</h3>
+                    
+                    <div class="menu-category">
+                        <h4>🥂 Starters</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Artichoke soup">
+                                <div class="item-info">
+                                    <h5>Jerusalem Artichoke Soup</h5>
+                                    <p>With black truffle oil and hazelnut crumble</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Warm brie">
+                                <div class="item-info">
+                                    <h5>Warm Brie with Cranberry Gelée</h5>
+                                    <p>Served with spiced toast</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Roasted cauliflower">
+                                <div class="item-info">
+                                    <h5>Roasted Cauliflower with Tahini and Pomegranate</h5>
+                                    <p>Earthy and bold</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h4>🍽️ Mains</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Braised short rib">
+                                <div class="item-info">
+                                    <h5>Braised Short Rib with Red Wine Jus</h5>
+                                    <p>Served over creamy polenta</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Chestnut ravioli">
+                                <div class="item-info">
+                                    <h5>Chestnut & Sage Ravioli</h5>
+                                    <p>In brown butter and sage foam</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1544943910-4ab880996de0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Seared cod">
+                                <div class="item-info">
+                                    <h5>Seared Cod with Winter Vegetables</h5>
+                                    <p>Served with parsnip purée and roasted root vegetables</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h4>🍹 Drinks</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Mulled wine">
+                                <div class="item-info">
+                                    <h5>Mulled Wine</h5>
+                                    <p>Red wine warmed with winter spices</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Hot chocolate">
+                                <div class="item-info">
+                                    <h5>Spiced Hot Chocolate</h5>
+                                    <p>Rich cocoa with cinnamon and chili</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h4>🍰 Desserts</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Chocolate dessert">
+                                <div class="item-info">
+                                    <h5>Dark Chocolate Tart with Gold Leaf</h5>
+                                    <p>Rich ganache with edible gold</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Winter dessert">
+                                <div class="item-info">
+                                    <h5>Gingerbread Soufflé</h5>
+                                    <p>Warm and airy with vanilla cream</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Ice wine dessert">
+                                <div class="item-info">
+                                    <h5>Ice Wine Granita</h5>
+                                    <p>Frozen dessert with candied fruits</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- News Section -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <h2>Latest News</h2>
+            <p class="news-intro">Stay updated with our seasonal offerings and special events</p>
+            <div class="news-container">
+                <!-- News items will be generated by JavaScript -->
+            </div>
+        </div>
+    </section>
+    <!-- Contact & Reservation Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact & Reservations</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Seasonal Boulevard<br>Gourmet District, GD 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(555) SEASON-1<br>(555) 732-7661</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>reservations@saisonenbouche.com<br>info@saisonenbouche.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Tuesday - Sunday: 5:00 PM - 11:00 PM<br>Monday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-form">
+                    <h3>Make a Reservation</h3>
+                    <form>
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="tel" placeholder="Phone Number" required>
+                        <input type="date" required>
+                        <input type="time" required>
+                        <select required>
+                            <option value="">Number of Guests</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6+ Guests</option>
+                        </select>
+                        <textarea placeholder="Special Requests"></textarea>
+                        <button type="submit" class="cta-button">Make Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="attached_assets/Screenshot 2025-06-22 144346_1750631165177.png" alt="Saison en Bouche Logo" class="footer-logo-image">
+                    <span class="logo-text">Saison en Bouche</span>
+                    <p>Where Flavor Meets The Season</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Saison en Bouche. All rights reserved. | Every season has a flavor.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
